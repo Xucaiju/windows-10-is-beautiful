@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="#003F78">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:background="#1F1F1F"
+            android:gravity="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="欢迎"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="基本"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="网络"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="账户"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="服务"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+            </GridLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:background="#1F1F1F"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/delivery_time_32px"
+                app:tint="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="14dp"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView2"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView2"
+                app:srcCompat="@drawable/microphone_32px"
+                app:tint="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView3"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView3"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView3"
+                app:srcCompat="@drawable/record_32px"
+                app:tint="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView4"
+                app:srcCompat="@drawable/speaker_32px"
+                app:tint="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="你好!我是小娜,让我来帮你。"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginStart="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView4"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView4" />
+          <!--  <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="14dp"
+                app:srcCompat="@drawable/record_32px"
+                app:tint="#FFFFFF" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="14dp"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:text="你好!我是小娜,让我来帮你。" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                g
+                app:srcCompat="@drawable/speaker_32px"
+                app:tint="#FFFFFF" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp2_install_screen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
