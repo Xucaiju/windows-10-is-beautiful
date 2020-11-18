@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/record_32px"
-        app:tint="#FFFFFF" />
+        app:tint="#FFFFFF"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"

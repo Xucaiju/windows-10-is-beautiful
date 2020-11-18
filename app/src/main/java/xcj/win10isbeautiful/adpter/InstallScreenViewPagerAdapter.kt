@@ -13,7 +13,7 @@ class InstallScreenViewPagerAdapter(fragmentActivity: FragmentActivity):Fragment
     override fun createFragment(position: Int): Fragment {
         return when(position){
             0->{WelcomeFragment.getInstance()}
-            1->{BasicFragment.getInstance()}
+            1->{RegionFragment.getInstance()}
             2->{KeyboardFragment.getInstance()}
             3->{Keyboard2Fragment.getInstance()}
             4->{ServiceFragment.getInstance()}

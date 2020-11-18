@@ -17,10 +17,12 @@ object JsonFileReader {
             val fileInputStream = FileInputStream(filePath)
             val inputStreamReader = InputStreamReader(fileInputStream, Charsets.UTF_8)
             val bufferedReader = BufferedReader(inputStreamReader)
-            while (bufferedReader.readLine()!=null){
+            val readText = bufferedReader.readText()
+            /*while (bufferedReader.readLine()!=null){
                 jsonStr.append(bufferedReader.readLine())
             }
-            readedStr = jsonStr.toString()
+            readedStr = jsonStr.toString()*/
+            readedStr = readText
         }catch(e:IOException){
             e.printStackTrace()
         }finally {
@@ -37,7 +39,8 @@ object JsonFileReader {
     fun toObject():JSONArray?{
         readedStr?.let {
             val parseArray = JSONArray.parseArray(it)
-            Log.e("yellow", parseArray.toJSONString())
+            //Log.e("yellow", parseArray.toJSONString())
+            return parseArray
         }?:doOther {
 
         }
