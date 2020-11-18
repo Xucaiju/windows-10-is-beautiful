@@ -77,14 +77,15 @@ class RegionFragment :BaseFragment(){
         }
 
         override fun onBindViewHolder(holder: SimpleHolder, position: Int) {
-
             holder.regionTextView.text = mDataList[position].cn
             if(position==3){
-                holder.itemView.setBackgroundResource(xcj.win10isbeautiful.R.drawable.bg_for_item_selected)
+                holder.itemView.setBackgroundResource(R.drawable.bg_for_item_selected)
+            }else{
+                holder.itemView.setBackgroundResource(0)
             }
         }
         inner class SimpleHolder(itemView:View):RecyclerView.ViewHolder(itemView){
-            val regionTextView = itemView.findViewById<AppCompatTextView>(xcj.win10isbeautiful.R.id.tv_region)
+            val regionTextView = itemView.findViewById<AppCompatTextView>(R.id.tv_region)
         }
     }
 }
